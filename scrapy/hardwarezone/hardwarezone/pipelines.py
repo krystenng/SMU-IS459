@@ -19,14 +19,14 @@ class HardwarezonePipeline:
             27017
         )
         db = connection["hardwarezone"]
-        self.connection = db["threads"]
+        self.connection = db["posts"]
 
     def process_item(self, item, spider):
-        # valid = True
-        # for data in item:
-        #     if not data:
-        #         valid = False
-        #         raise DropItem("Missing {0}!".format(data))
-        # if valid:
-        #     self.collection.insert(dict(item))
+        valid = True
+        for data in item:
+            if not data:
+                valid = False
+                raise DropItem("Missing {0}!".format(data))
+        if valid:
+            self.collection.insert(dict(item))
         return item

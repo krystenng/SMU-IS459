@@ -69,7 +69,8 @@ ITEM_PIPELINES = {
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "hardwarezone"
-THREAD_COLLECTION = "threads"
+TOPIC_COLLECTION = "topics"
+POST_COLLECTION = "posts"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
