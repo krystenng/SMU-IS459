@@ -19,7 +19,7 @@ class HardwarezonePipeline:
             27017
         )
         db = connection["hardwarezone"]
-        self.connection = db["posts"]
+        self.collection = db["posts"]
 
     def process_item(self, item, spider):
         valid = True
