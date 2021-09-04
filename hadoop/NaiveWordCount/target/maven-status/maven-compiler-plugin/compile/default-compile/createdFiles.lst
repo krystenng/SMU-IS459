@@ -1,0 +1,3 @@
+sg/edu/smu/is459/example/WordCount.class
+sg/edu/smu/is459/example/WordCount$TokenizerMapper.class
+sg/edu/smu/is459/example/WordCount$IntSumReducer.class
